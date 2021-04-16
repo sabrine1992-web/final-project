@@ -1,1 +1,52 @@
 
+.img {
+    background-image: url(./source/cover.jpg);
+      width: 1250px;
+      height: 350px;
+    
+    }
+  .App{
+  background-image:url(./source/cover2.jpg);
+  
+  }
+  
+  #t{
+  font-family: 'Courier New', Courier, monospace;
+  color: rgb(66, 43, 148);
+  margin-top: -7cm;
+  padding-left: 5cm;
+  font-size: 120pt;
+  justify-content: center;
+
+  }
+  #t:hover{
+      color: darkviolet;
+  }
+  .flex{
+      margin-top: 2cm;
+      padding-left: 2cm;
+      display:inline-flex; 
+  }
+  .d-flex{
+    margin-top: 2cm;
+    padding-left: 11cm;
+    font-size:x-large;
+
+}
+.d{
+    margin-top: 1cm;
+}  
+.p{
+ font-family:Verdana, Geneva, Tahoma, sans-serif;
+color:black;
+width:400px;
+height:100px;
+padding-left: 1cm;
+}
+.p:hover{
+color: violet;
+}
+.link{
+  margin-top: 3cm;
+  padding-left: 1cm;
+}

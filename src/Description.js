@@ -1,23 +1,23 @@
 import React from 'react';
-import { Link, Route } from 'react-router-dom';
 export default function Description({match,data}){
-  var movie= data.find(p => p.id == match.params.id);
-  var movieData;
+  var anime= data.find(p => p.id == match.params.id);
+  var animeData;
 
-  if(movie)
-  movieData = <div>
-    <img src={movie.img} />
-      <h3> {movie.title} </h3>
-      <p>{movie.describe}</p>
+  if(anime)
+  animeData = <div className="d">
+    <img style={{width:'200px',paddingLeft:'1cm'}} src={anime.img} />
       <hr/>
-      <h4>{movie.link}</h4>  </div>;
+      <h2 style={{color:'crimson',paddingLeft:'1cm' }}> {anime.title} </h2>
+      <p className="p"><h4>{anime.describe}</h4></p>
+      <hr/>
+      <h4 className="link">{anime.link}</h4>  </div>;
   else
-  movieData = <h2> Sorry. Movie doesnt exist </h2>;
+  animeData = <h2> Sorry. anime doesnt exist </h2>;
 
   return (
     <div>
       <div>
-         {movieData}
+         {animeData}
       </div>
     </div>
   )   
